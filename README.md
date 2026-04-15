@@ -1,6 +1,6 @@
 # Arboretum_Database
 ## Project Overview
-This project documents the end-to-end lifecycle of an Arboretum Database, moving from initial business rules and Entity-Relationship Modeling (ERM) to a fully normalized schema implemented in MySQL. The system tracks plants and their specific environmental requirements, including soil, climate, and size characteristics.
+This project documents the end-to-end lifecycle of an Arboretum Database, moving from initial business rules and Entity-Relationship Modeling (ERM) to a fully normalized schema implemented in MySQL. The system tracks plants and their specific environmental requirements, including soil, climate, and size characteristics. This was an assignment for a course in Database Concepts with multiple parts over the course of two weeks. 
 
 ## Conceptual Design (ERM)
 **The database was originally designed around the following Business Rules:**
@@ -15,10 +15,17 @@ Solar exposure is dictated by the specific climate zone.
 
 <img width="1080" height="418" alt="image" src="https://github.com/user-attachments/assets/39e464d4-db86-4d52-98e2-a8586d9c3aae" />
 
+> **Note:** Made using Microsoft Visio
+
 ---
 
 ## Normalization & Schema Refinement
 To ensure data integrity and reduce redundancy, the schema was refined to reach Third Normal Form (3NF).
+
+**Original ER Model**: 
+<img width="1065" height="427" alt="image" src="https://github.com/user-attachments/assets/da0da006-e628-45eb-87b0-c56773473d6f" />
+> **Note:** Made using Microsoft Visio 
+
 
 ### Modifications for 3NF
 Table Splitting: The original SoilType table was split into two distinct entities: Location and Soil.
